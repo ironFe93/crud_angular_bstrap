@@ -1,6 +1,7 @@
 # ClientInventory
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+This demo hits a local sever API located at http://localhost:8080/articulos
 
 ## Development server
 
