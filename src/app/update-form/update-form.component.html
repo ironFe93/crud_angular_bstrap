@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <h4 class="modal-title">Modificar Articulo</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+    <div class="modal-body" fxLayout="column" fxLayoutGap="10px">
+        <input type="text" class="form-control" formControlName="cod" placeholder="Código">
+        <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre">
+        <input type="text" class="form-control" formControlName="descripcion" placeholder="Descripcion">
+        <input type="number" class="form-control" formControlName="cantidad" placeholder="Cantidad">
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-outline-dark">Modificar</button>
+      <button type="button" class="btn btn-outline-dark" (click)="activeModal.close()">Cerrar</button>
+    </div>
+  </form>

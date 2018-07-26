@@ -1,0 +1,15 @@
+<div class="modal-header">
+    <h4 class="modal-title">Eliminar Articulo</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <form [formGroup]="deleteForm" (ngSubmit)="onSubmit()">
+    <div class="modal-body" fxLayout="column" fxLayoutGap="10px">
+        <input type="text" class="form-control" formControlName="cod" placeholder="Código">
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-outline-dark">Eliminar</button>
+      <button type="button" class="btn btn-outline-dark" (click)="activeModal.close()">Cerrar</button>
+    </div>
+  </form>
